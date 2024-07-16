@@ -2,11 +2,16 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #8057b6;
+
+}
+
+body {
+    background-image: url('../../img/corina-rainer-P2wLo_PzHjU-unsplash.jpg');
 }
 
 h1 {
-    font-size: 100px;
-    margin-top: 300px;
-    color: #0006af;
+    font-size: 200px;
+    margin-top: 100px;
+    color: #d31a38;
+    margin-left: 50px;
 }
