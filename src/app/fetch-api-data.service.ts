@@ -4,7 +4,7 @@ import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http
 import { Observable, throwError } from 'rxjs';
 
 //Declaring the api url that will provide data for the client app
-const apiUrl = 'https://movie-api-nj6m.onrender.com/';
+const apiUrl = 'https://movie-api-nj6m.onrender.com';
 
 @Injectable({
   providedIn: 'root'
@@ -32,7 +32,7 @@ export class FetchApiDataService {
 
   //Making the api call for the user login endpoint
   public userLogin(userDetails: any): Observable<any> {
-    return this.http.post(apiUrl + 'login', userDetails).pipe(
+    return this.http.post(apiUrl + '/login', userDetails).pipe(
       catchError(this.handleError)
     );
   }
